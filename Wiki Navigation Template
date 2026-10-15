@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- This will be your navigation! A script will include it on every page, so make sure to have this in your main folder (where your index is. You also NEED to title this document "navigation.html" for it to work with the rest of the code.-->
+  <meta charset="UTF-8">
+  <!-- The title of your webpage... I don't actually know if this does anything in this specific document actually, but keep it to be safe.-->
+    <title>YOUR TITLE HERE</title>
+    <style>
+
+      .navbar {
+        padding: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 100px;
+        margin-bottom: 0px;
+      }
+      
+      .navbar img {
+        max-width: 40px;
+        float:left;
+      }
+      
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+     .navbar ul li {
+        float: left;
+      }
+      
+      /* Replace "darkslategray" below with the color you want your navigation text to be */
+
+      .navbar ul li a {
+        display: block;
+        color: darkslategray;
+        text-align: center;
+        padding: 14px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 13px;
+      }
+      
+      /* Again, replace "darkslategray" below with the color you want your navigation text to be. This is specifically the menu items that turn into drop-down lists, so you'll want both. */
+      
+      .navbar details {
+      float: left;
+      display: block;
+      color: darkslategray;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 13px;
+      }
+      
+      /*Replace "honeydew" with the background color of your drop-down menu. I suggest making this the same color as your main container, if you want it to look as close to a normal wiki as possible.*/
+      
+      .navbar details ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: honeydew;
+        position: absolute;
+      }
+
+      .navbar details li a {
+        display: block;
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      .navbar details li a:hover {
+        color: white;
+      }
+
+      .navbar ul li a:hover {
+        color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+  <div class="navbar">
+  <!--Replace "/Images/J.png" below with your site icon.-->
+    <ul><ul><img src="/Images/J.png">
+    <li><a href="/">YOUR TITLE HERE</a></li>
+    <li><a href="/PAGE LINK HERE">PAGE TITLE HERE</a></li>
+    <details>
+  <summary>YOUR DROP DOWN TITLE HERE</summary>
+  <ul>
+    <li><a href="/PAGELINKHERE">PAGE TITLE HERE</a></li>
+  </ul>
+</details>
+<!--To add another drop down item, copy and paste everything from <details> to </details>. To add a sinngle page or another page to the drop down list, copy and paste everything from <li> to <li>. For drop-down items, be sure to keep it inside the corresponding </ul> tag.-->
+    </ul>
+    </div>
+  </body>
+</html>
